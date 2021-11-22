@@ -1,4 +1,4 @@
-from dao.genre import GenreDAO
+from demostration_solution.dao.genre import GenreDAO
 
 
 class GenreService:
@@ -9,6 +9,7 @@ class GenreService:
         return self.dao.get_one(bid)
 
     def get_all(self):
+        print (self.dao.querry.all())
         return self.dao.get_all()
 
     def create(self, genre_d):
